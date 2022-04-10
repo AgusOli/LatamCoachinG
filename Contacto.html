@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LatamCoaching Contacto</title>
+</head>
+<body class="contacto">
+    <header>
+
+        <h1><a href="./index.html">LatamCoaching Lol</a></h1>
+    </header>  
+    
+<hr>
+<div class="indice">
+
+    <h2>Indice</h2>
+    <ul>
+        <li><a href="./index.html">¿Quienes somos?</a></li>
+        
+        <li><a href="./Planes.html">Nuestros planes y servicios</a></li>
+        
+        <li><a href="./Equipo-trabajo.html">Equipo de trabajo</a></li>
+        <li><a href="./Clase-gratis.html">Proba nuestra clase gratis!</a></li>
+        <li><a href="./Contacto.html">Contáctanos</a></li>
+        <li> <a href="#pie-pagina">Nuestras redes</a></li>
+    </ul>
+</div>
+    
+    
+    
+    
+    
+    
+    
+
+<h2 class="titulo-contacto">Contacto</h2>
+<p>Al completar la información del formulario a continuación nos pondremos en contacto en menos de 48 horas con el usuario para brindar la informacion solicitada o continuar con la eleccion y pago del plan de aprendizaje.</p>
+
+<form action="enviar.php" method="get" enctype="text/plain">
+
+    <br>
+    <div class="form">
+        
+        <fieldset class="datos-usuario">
+            <legend>Datos del usuario</legend>
+            
+            <div>
+                <label for="Nommbre y Apellido">Nombre y Apellido</label>
+                <input type="text" id="Nombre y Apellido" placeholder="Ingrese Nombre y Apellido" required>
+            </div>
+            <br>
+            <div>
+                <label for="Email">Email de contacto</label>
+                <input type="text" id="Email" placeholder="Ingrese su Email" required>
+            </div>
+            <br>
+            <div>
+                <label for="Nombre de Invocador">Nombre de Invocador (Nombre en el juego)</label>
+                <input type="text" id="Nombre de Invocador" placeholder="Ingrese su Nombre de Invocador" required> 
+            </div>
+            <br>
+            <div>
+                <label for="Link de la cuenta"> Link de la cuenta de Lol</label>
+                <input type="link" id="Link de la cuenta" placeholder="Busca el link de tu cuenta y pegalo aca" required>
+                <h3><a href="https://las.op.gg/">¿No sabés dónde buscar tu cuenta? Haz Click Acá</a></h3>
+            <link rel="stylesheet" href="./css/style.css">
+            
+            <select name="Region" id="Region" required>
+                <option value="0">Seleccione la región</option>
+                <option value="1">LAS</option>
+                <option value="2">LAN</option>
+                <option value="3">BR</option>
+                
+            </select>
+        </div>
+        
+        
+    </fieldset>
+    <br>
+    <fieldset class="datos-usuario">
+        
+        <legend>Consulta o solicitud de suscripción</legend>
+        <br>
+        <div>
+            <label for="multi">Hacé tu consulta</label>   
+            <textarea name="multi" id="multi" cols="100" rows="15"></textarea>
+        </div>
+        <br>
+        
+        <select name="Planes" id="Planes" required>
+            <option value="0">Seleccione el plan que le interesa</option>
+            <option value="1">Análisis de partidas</option>
+            <option value="2">Clases sobre conceptos basicos</option>
+            <option value="3">Clases de toma de decisiones</option>
+            <option value="4">Preparación de clases sobre tema específico (aclarar en consulta)</option>
+        </select>
+    </fieldset>
+    <br>
+    <div class="checkbox">
+        
+        <p>Recordá que una vez enviado el formulario, un integrante del equipo se comunicará contigo al email proporcionado para poder brindarle asi un presupuesta mas especifico y tambien aclarar la consulta que se haya hecho, por ende al enviar el formulario acepta que el equipo le envie notificaciones al email.</p>
+        
+        <input type="checkbox" name="term y cond" id="term y cond" value="1" required> Acepto Términos y Condiciones
+        
+        <br>
+        
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpiar formulario">
+    </div>    
+    
+</form>
+</div>
+<br>
+<br>
+
+<footer class="footer" id="pie-pagina">
+    <ul class="footer">
+        <li>Youtube</li>
+                <li>Twitch</li>
+                <li>Instagram</li>
+                <li>Twitter</li>
+            </ul>
+         </footer>
+
+    
+
+
+
+
