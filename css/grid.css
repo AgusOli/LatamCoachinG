@@ -1,8 +1,5 @@
 .index {
-    background-image: url(../Img/Kayn2.jpg) ;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    background-color:black;
 }
 .index header {
     margin: auto;
@@ -47,6 +44,13 @@
     font-weight: 900;
     font-family: "Fraunces", serif;
   }
+  .main__img {
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+}
+    
+
 .index .quienes-somos {
     font-family: "Fraunces", serif;
     color: #c28f2c;
