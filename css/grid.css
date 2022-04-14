@@ -221,6 +221,27 @@
     background-size: cover;
     background-position: center;
 }
+.equipo-trabajo header {
+    margin: auto;
+    text-align: center;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    background: black;
+  }
+  
+.equipo-trabajo .header__leyenda {
+    font-family: "Fraunces", serif;
+    color: #c28f2c;
+  }
+.equipo-trabajo .header__img {
+    width: 200px;
+    height: 200px;
+    margin: 5px;
+  }
+.equipo-trabajo .header__leyenda--container {
+    padding: 30px;
+  }
 .equipo-trabajo .logo img {
     width: 195px;
     height: 195px;
@@ -257,7 +278,105 @@
     height: 300px;
     width: 300px;
 }
-
+.equipo-trabajo .footer {
+    width: 100%;
+   padding: 4px;
+   font-size: 1.8rem;
+   font-weight: bold;
+   background: #212529;
+   text-align: center;
+}
+   
+ 
+.equipo-trabajo .footer ul li {
+   padding-top: 10px;
+   list-style: none;
+   display: inline;
+   color: #c28f26;
+   font-weight: 900;
+   font-family: "Fraunces", serif;
+   margin: 10%;
+}
+.contacto header {
+    margin: auto;
+    text-align: center;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    background: black;
+  }
+  
+.contacto .header__leyenda {
+    font-family: "Fraunces", serif;
+    color: #c28f2c;
+  }
+.contacto .header__img {
+    width: 200px;
+    height: 200px;
+    margin: 5px;
+  }
+.contacto .header__leyenda--container {
+    padding: 30px;
+  }
+.contacto .footer {
+    width: 100%;
+   padding: 4px;
+   font-size: 1.8rem;
+   font-weight: bold;
+   background: #212529;
+   text-align: center;
+}
+   
+ 
+.contacto .footer ul li {
+   padding-top: 10px;
+   list-style: none;
+   display: inline;
+   color: #c28f26;
+   font-weight: 900;
+   font-family: "Fraunces", serif;
+   margin: 10%;
+}
+.clase-gratis header {
+    margin: auto;
+    text-align: center;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    background: black;
+  }
+  
+.clase-gratis .header__leyenda {
+    font-family: "Fraunces", serif;
+    color: #c28f2c;
+  }
+.clase-gratis .header__img {
+    width: 200px;
+    height: 200px;
+    margin: 5px;
+  }
+.clase-gratis .header__leyenda--container {
+    padding: 30px;
+  }
+.clase-gratis .footer {
+    width: 100%;
+   padding: 4px;
+   font-size: 1.8rem;
+   font-weight: bold;
+   background: #212529;
+   text-align: center;
+}
+   
+ 
+.clase-gratis .footer ul li {
+   padding-top: 10px;
+   list-style: none;
+   display: inline;
+   color: #c28f26;
+   font-weight: 900;
+   font-family: "Fraunces", serif;
+   margin: 10%;
+}
 @media all and (max-width: 768px) {
     .index .grid-container {
         display: grid;
