@@ -22,28 +22,25 @@
 .index  .header__leyenda--container {
     padding: 30px;
   }
-.index .indice {
-    width: 100%;
-    padding: 4px;
-    font-size: 1.3rem;
-    font-weight: bold;
-    background: #3b3333;
-    text-align: center;
+  .navbar-expand-lg .navbar-collapse{
+      justify-content: center;
   }
-.index .indice ul li {
-    padding-top: 10px;
-    margin: 0px 25px;
-    display: block;
-    list-style: none;
-    display: inline;
-  }
-.index .indice ul li a {
-    list-style: none;
-    text-decoration: none;
-    color: #c28f26;
-    font-weight: 900;
+  .navbar-dark .navbar-nav .nav-link {
+      color:#c28f26 ;
+      font-family: "Fraunces", serif;
+      font-size: 1.2rem;
+      margin: 0px 15px;  }
+  .navbar-dark .navbar-nav .nav-link.active {
+    color:#a2491e ;
     font-family: "Fraunces", serif;
-  }
+    font-size: 1.2rem;
+    margin: 0px 15px;
+    }
+    .bg-dark {
+        position: sticky;
+        top: 0;
+        z-index: 100;
+            }
   .main__img {
     text-align: center;
     width: 100%;
@@ -68,7 +65,8 @@
     grid-row: 1;
     text-align: center;
     color: #c28f26;
-    font-weight: 800;
+    font-weight: 600;
+    font-family: "Fraunces", serif;
 }
 .index .grid-container .video{
     grid-column: 1;
@@ -95,12 +93,12 @@
 .index .footer {
     width: 100%;
     padding: 4px;
-    font-size: 1.3rem;
+    font-size: 1.8rem;
     font-weight: bold;
-    background: #3b3333;
+    background: #212529;
     text-align: center;
-    margin-top: 300px;
-  }
+}
+    
 .index .footer ul li {
     padding-top: 10px;
     list-style: none;
@@ -138,42 +136,22 @@
   .planes  .header__leyenda--container {
     padding: 30px;
   }
-  .planes .indice {
-    width: 100%;
-    padding: 4px;
-    font-size: 1.3rem;
-    font-weight: bold;
-    background: #3b3333;
-    text-align: center;
-  }
-  .planes .indice ul li {
-    padding-top: 10px;
-    margin: 0px 25px;
-    display: block;
-    list-style: none;
-    display: inline;
-  }
-  .planes .indice ul li a {
-    list-style: none;
-    text-decoration: none;
-    color: #c28f26;
-    font-weight: 900;
-    font-family: "Fraunces", serif;
-  }
-  .planes h2 {
+    .planes h2 {
       color: #c28f2c;
       text-align: center;
       width: 100%;
       background-color: black ;
       margin: 0px;
+      font-family: "Fraunces", serif;
   }
   .planes .desc {
       text-align: left;
       color: #c28f26;
-      font-size: 20px;
+      font-size: 18px;
       font-weight: 700;
       background-color: black;
       margin-bottom: 0px;
+      font-family: "Fraunces", serif;
   }
 
  .planes .flex-container {
@@ -190,7 +168,7 @@
     background: black;
     border: 5px solid #000;
     width: 90%;
-    height: 100%;
+    height: 105%;
     color: white;
     align-items: flex-end;
     align-content: flex-end;
@@ -198,14 +176,15 @@
     
 
  .planes .footer {
-    width: 100%;
+     width: 100%;
     padding: 4px;
-    font-size: 1.3rem;
+    font-size: 1.8rem;
     font-weight: bold;
-    background: #3b3333;
+    background: #212529;
     text-align: center;
+}
     
-  }
+  
 .planes .footer ul li {
     padding-top: 10px;
     list-style: none;
@@ -215,7 +194,9 @@
     font-family: "Fraunces", serif;
     margin: 10%;
 }
-
+#pie-pagina {
+    margin: 0;
+}
 
     
 
