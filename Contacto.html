@@ -7,8 +7,8 @@
     <title>LatamCoaching Contacto</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="./css/grid.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"> <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body class="contacto">
     <header class="animate__animated animate__backInLeft" class="titulo">
@@ -50,6 +50,7 @@
         </div>
       </div>
     </nav>
+    <img class="animate__animated animate__backInUp" src="./Img/Jarvan.jpg" alt="Jarvan">
     <h2 class="titulo-contacto">Contacto</h2>
 <p>Al completar la información del formulario a continuación nos pondremos en contacto en menos de 48 horas con el usuario para brindar la informacion solicitada o continuar con la eleccion y pago del plan de aprendizaje.</p>
 
@@ -77,11 +78,11 @@
             </div>
             <br>
             <div>
-                <label for="Link de la cuenta"> Link de la cuenta de Lol</label>
+              <label for="Link de la cuenta"> Link de la cuenta de Lol</label>
                 <input type="link" id="Link de la cuenta" placeholder="Busca el link de tu cuenta y pegalo aca" required>
                 <h3><a href="https://las.op.gg/">¿No sabés dónde buscar tu cuenta? Haz Click Acá</a></h3>
-            
-            
+           </div>
+         <div>
             <select name="Region" id="Region" required>
                 <option value="0">Seleccione la región</option>
                 <option value="1">LAS</option>
@@ -96,9 +97,9 @@
         
         <legend>Consulta o solicitud de suscripción</legend>
         <br>
-        <div>
+        <div class="consulta">
             <label for="multi">Hacé tu consulta</label>   
-            <textarea name="multi" id="multi" cols="100" rows="15"></textarea>
+            <textarea name="multi" id="multi" cols="100" rows="10"></textarea>
         </div>
         <br>
         
@@ -111,8 +112,8 @@
         </select>
     </fieldset>
     <br>
+    <p>Recordá que una vez enviado el formulario, un integrante del equipo se comunicará contigo al email proporcionado para poder brindarle asi un presupuesta mas especifico y tambien aclarar la consulta que se haya hecho, por ende al enviar el formulario acepta que el equipo le envie notificaciones al email.</p>
     <div class="checkbox">
-                <p>Recordá que una vez enviado el formulario, un integrante del equipo se comunicará contigo al email proporcionado para poder brindarle asi un presupuesta mas especifico y tambien aclarar la consulta que se haya hecho, por ende al enviar el formulario acepta que el equipo le envie notificaciones al email.</p>
         
         <input type="checkbox" name="term y cond" id="term y cond" value="1" required> Acepto Términos y Condiciones
         
@@ -134,9 +135,4 @@
         <li><i class="bi bi-twitter"></i></li>
     </ul>
     </footer>
-
-    
-
-
-
 
