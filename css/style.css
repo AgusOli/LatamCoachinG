@@ -2,6 +2,10 @@
   background-color: black;
 }
 
+.index img {
+  width: 100%;
+}
+
 .index header {
   margin: auto;
   text-align: center;
