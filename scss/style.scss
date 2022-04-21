@@ -1,3 +1,5 @@
+* {font-family: "Fraunces", serif;color: #c28f2c;}
+$boxBorder: 5px solid black;
 .index {
     background-color:black;
     img{
@@ -13,10 +15,6 @@
     background: black;
   }
   
-.index .header__leyenda {
-    font-family: "Fraunces", serif;
-    color: #c28f2c;
-  }
 .index .header__img {
     width: 200px;
     height: 200px;
@@ -29,13 +27,10 @@
       justify-content: center;
   }
   .navbar-dark .navbar-nav .nav-link {
-      color:#c28f26 ;
-      font-family: "Fraunces", serif;
       font-size: 1.2rem;
       margin: 0px 15px;  }
   .navbar-dark .navbar-nav .nav-link.active {
     color:#a2491e ;
-    font-family: "Fraunces", serif;
     font-size: 1.2rem;
     margin: 0px 15px;
     }
@@ -52,8 +47,6 @@
     
 
 .index .quienes-somos {
-    font-family: "Fraunces", serif;
-    color: #c28f2c;
     text-align: center;
     font-weight:800 ;
 }
@@ -67,10 +60,8 @@
     grid-column: 1;
     grid-row: 1;
     text-align: center;
-    color: #c28f26;
-    font-weight: 600;
-    font-family: "Fraunces", serif;
-}
+   font-weight: 600;
+    }
 .index .grid-container .video{
     grid-column: 1;
     grid-row: 2;
@@ -80,7 +71,7 @@
 .index .grid-container .video iframe {
     width: 100%;
     height: 100%;
-    border: black solid 5px;
+    border: $boxBorder;
     align-content: center;
 }
     
@@ -108,7 +99,6 @@
     display: inline;
     color: #c28f26;
     font-weight: 900;
-    font-family: "Fraunces", serif;
     margin: 10%;
 }
  
@@ -124,10 +114,6 @@
     background: black;
   }
   
-  .planes .header__leyenda {
-    font-family: "Fraunces", serif;
-    color: #c28f2c;
-  }
   .planes .header__img {
     width: 200px;
     height: 200px;
@@ -140,13 +126,11 @@
       width: auto;
   }
     .planes h2 {
-      color: #c28f2c;
       text-align: center;
       width: 100%;
       background: #212529;
       margin-bottom: 10px;
-      font-family: "Fraunces", serif;
-  }
+    }
  
  .planes .flex-container {
     display: grid;
@@ -184,9 +168,7 @@
     padding-top: 10px;
     list-style: none;
     display: inline;
-    color: #c28f26;
     font-weight: 900;
-    font-family: "Fraunces", serif;
     margin: 10%;
 }
 #pie-pagina {
@@ -205,10 +187,6 @@
     background: black;
   }
   
-.equipo-trabajo .header__leyenda {
-    font-family: "Fraunces", serif;
-    color: #c28f2c;
-  }
 .equipo-trabajo .header__img {
     width: 200px;
     height: 200px;
@@ -220,7 +198,7 @@
 .equipo-trabajo .logo img {
     width: 195px;
     height: 195px;
-    border: solid black 5px;
+    border: $boxBorder;
     grid-column: 1;
     grid-row: 1;
 }
@@ -232,15 +210,12 @@
 }
 .equipo-trabajo .indice ul li a {
     text-decoration: none;
- color: #c28f2c;
 }
 .equipo-trabajo h2 {
-    color: #c28f2c;
     text-align: center;
     width: 100%;
     background: #212529;
     margin-bottom: 10px;
-    font-family: "Fraunces", serif;
 }
 .equipo-trabajo .principal{
     display: grid;
@@ -252,8 +227,6 @@
         border: solid #212529 5px;
     }
     p {
-        font-family: "Fraunces", serif;
-        color: #c28f2c;
         font-size: 1.6rem;
       }
     .img1 {
@@ -303,15 +276,11 @@
    padding-top: 10px;
    list-style: none;
    display: inline;
-   color: #c28f26;
    font-weight: 900;
-   font-family: "Fraunces", serif;
    margin: 10%;
 }
 .contacto {
     background-color: #000;
-    font-family: "Fraunces", serif;
-    color: #c28f26;
     img{
         width: 100%;
     }
@@ -324,10 +293,10 @@
         text-align: center;
     }
     .form {
-                .datos-usuario{
-            border: #000 solid 5px;
+             .datos-usuario{
+            border: $boxBorder;
             background-color: #212529;
-               legend {
+            legend {
                 text-align: center;
             }
             .consulta {
@@ -355,10 +324,6 @@
     background: black;
   }
   
-.contacto .header__leyenda {
-    font-family: "Fraunces", serif;
-    color: #c28f2c;
-  }
 .contacto .header__img {
     width: 200px;
     height: 200px;
@@ -383,15 +348,11 @@
    padding-top: 10px;
    list-style: none;
    display: inline;
-   color: #c28f26;
    font-weight: 900;
-   font-family: "Fraunces", serif;
    margin: 10%;
 }
 .clase-gratis{
    background-color: #000;
-   font-family: "Fraunces", serif;
-   color: #c28f26;
    img {
        width: 100%;
    }
@@ -427,10 +388,6 @@
     background: black;
   }
   
-.clase-gratis .header__leyenda {
-    font-family: "Fraunces", serif;
-    color: #c28f2c;
-  }
 .clase-gratis .header__img {
     width: 200px;
     height: 200px;
@@ -453,9 +410,7 @@
    padding-top: 10px;
    list-style: none;
    display: inline;
-   color: #c28f26;
    font-weight: 900;
-   font-family: "Fraunces", serif;
    margin: 10%;
 }
 @media all and (max-width: 768px) {
@@ -469,28 +424,8 @@
         grid-row: 3;
         margin-top: 20px;
     }
-    .index .indice {
-        font-size: 10px;
-        text-align:center;
-    }
-    .index .indice ul{
-        padding-left: 0px;
-    }
-    .index .indice ul li{
-        margin: 5px;
-    }    
-    .index .footer ul li {
+     .index .footer ul li {
         margin: 5%
-    }
-    .planes .indice {
-        font-size: 10px;
-        text-align: center;
-    }  
-    .planes .indice ul li{
-        margin: 5px;
-    }
-    .planes .indice ul {
-        padding-left: 0px;
     }
     .planes .footer ul li{
         margin: 5%;
@@ -501,14 +436,8 @@
 
 }
 @media all and (max-width: 576px){
-    .index .indice ul li {
-        margin:3px
-    }
     .index .grid-container .latam-es {
         font-size: 20px;
-    }
-    .planes .indice ul li {
-        margin: 5px;
     }
     .planes h2 {
         font-size: 15px;
