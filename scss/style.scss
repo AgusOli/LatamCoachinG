@@ -8,14 +8,8 @@ $boxBorder: 5px solid black;
     justify-content: space-between;
     background: black; 
 }
-$colores: (
-    background: black,
-    lightfont: white,
-    darkbox: #212529
-    );
-    
 .index {
-    background-color:map-get($map:$colores, $key:background );
+    background-color:black;
     img{
         width: 100%;
     }
@@ -108,7 +102,7 @@ $colores: (
 }
  
 .planes {
-    background-color:map-get($map:$colores, $key:background );
+    background-color:black;
 }
 .planes header {
     @include header;
@@ -121,7 +115,7 @@ $colores: (
     padding: 30px;
   }
   .planes img {
-      width: auto;
+      width: 100%;
   }
     .planes h2 {
       text-align: center;
@@ -145,7 +139,7 @@ $colores: (
     border: 5px solid #212529;
     width: 90%;
     height: 105%;
-    color:map-get($map:$colores, $key:lightfont );
+    color:white;
     align-items: flex-end;
     align-content: flex-end;
 }   
@@ -164,7 +158,7 @@ $colores: (
 }
 
 .equipo-trabajo {
-    background-color:map-get($map:$colores, $key:background );
+    background-color:black;
 }
 .equipo-trabajo header {
     @include header;
@@ -176,21 +170,8 @@ $colores: (
 .equipo-trabajo .header__leyenda--container {
     padding: 30px;
   }
-.equipo-trabajo .logo img {
-    width: 195px;
-    height: 195px;
-    border: $boxBorder;
-    grid-column: 1;
-    grid-row: 1;
-}
-
-.equipo-trabajo .indice ul li {
-    list-style: none;
-    display: inline;
-    margin: 55px;
-}
-.equipo-trabajo .indice ul li a {
-    text-decoration: none;
+.equipo-trabajo img {
+   width: 100%;
 }
 .equipo-trabajo h2 {
     text-align: center;
@@ -252,13 +233,13 @@ $colores: (
     @extend .index.footer.ul.li ;
 }
 .contacto {
-    background-color:map-get($map:$colores, $key:background );
+    background-color:black;
     img{
         width: 100%;
     }
     h2 {
         text-align: center;
-        background-color:map-get($map:$colores, $key:darkbox );
+        background-color:#212529;
     }
     p {
         font-size: 1.3rem;
@@ -267,7 +248,7 @@ $colores: (
     .form {
              .datos-usuario{
             border: $boxBorder;
-            background-color:map-get($map:$colores, $key:darkbox );
+            background-color:#212529;
             legend {
                 text-align: center;
             }
@@ -308,7 +289,7 @@ $colores: (
     @extend .index.footer.ul.li ;
 }
 .clase-gratis{
-   background-color:map-get($map:$colores, $key:background );
+   background-color:black;
    img {
        width: 100%;
    }

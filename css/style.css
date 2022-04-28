@@ -174,7 +174,7 @@
 }
 
 .planes img {
-  width: auto;
+  width: 100%;
 }
 
 .planes h2 {
@@ -270,17 +270,6 @@
 .equipo-trabajo .header__leyenda--container {
   padding: 30px;
 }
-
-.equipo-trabajo .logo img {
-  width: 195px;
-  height: 195px;
-  border: solid black 5px;
-  -ms-grid-column: 1;
-  grid-column: 1;
-  -ms-grid-row: 1;
-  grid-row: 1;
-}
-
 .equipo-trabajo .indice ul li {
   list-style: none;
   display: inline;
@@ -291,7 +280,9 @@
   text-decoration: none;
   color: #c28f2c;
 }
-
+.equipo-trabajo img {
+  width: 100%;
+}
 .equipo-trabajo h2 {
   color: #c28f2c;
   text-align: center;
