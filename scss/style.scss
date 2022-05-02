@@ -10,15 +10,17 @@ $boxBorder: 5px solid black;
 }
 .index {
     background-color:black;
-    img{
-        width: 100%;
+    main {
+        img{
+            width: 100%;
+        }
     }
 }
 .index header {
 @include header;
   }
   
-.index .header__img {
+.index.header__img {
     width: 200px;
     height: 200px;
     margin: 5px;
@@ -57,13 +59,13 @@ $boxBorder: 5px solid black;
     display: grid;
     grid-template-columns: 550px auto;
     grid-template-rows: 100px 500px;
+    padding: 15px;
 }
 
 .index .grid-container .video-presentacion {
     grid-column: 1;
     grid-row: 1;
     text-align: center;
-   font-weight: 600;
     }
 .index .grid-container .video{
     grid-column: 1;
@@ -74,17 +76,19 @@ $boxBorder: 5px solid black;
 .index .grid-container .video iframe {
     width: 100%;
     height: 100%;
-    border: $boxBorder;
+    border: solid 5px #212529;
     align-content: center;
 }
     
 .index .grid-container .latam-es {
+    display: flex;
+    align-items: center;
     grid-column: 2;
     grid-row: 2;
     font-size: 25px;
     margin-left: 20px;
 }
-.index .footer {
+.index.footer {
     width: 100%;
     padding: 4px;
     font-size: 1.8rem;
@@ -93,7 +97,7 @@ $boxBorder: 5px solid black;
     text-align: center;
 }
     
-.index .footer ul li {
+.index.footer ul li {
     padding-top: 10px;
     list-style: none;
     display: inline;
@@ -103,6 +107,11 @@ $boxBorder: 5px solid black;
  
 .planes {
     background-color:black;
+    main{
+        img{
+            width: 100%;
+        }
+    }
 }
 .planes header {
     @include header;
@@ -114,9 +123,6 @@ $boxBorder: 5px solid black;
   .planes  .header__leyenda--container {
     padding: 30px;
   }
-  .planes img {
-      width: 100%;
-  }
     .planes h2 {
       text-align: center;
       width: 100%;
@@ -126,10 +132,10 @@ $boxBorder: 5px solid black;
  
  .planes .flex-container {
     display: grid;
-    grid-template-columns: 40% 40%;
-    grid-template-rows: 500px 500px;
-    gap: 30px;
-    column-gap: 20%;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-items: center;
+    grid-row-gap: 30px;
 }
 .planes .flex-container .flex-item img{
     width: 100%;
@@ -137,8 +143,7 @@ $boxBorder: 5px solid black;
  .planes .flex-item{
     background: black;
     border: 5px solid #212529;
-    width: 90%;
-    height: 105%;
+    width: 70%;
     color:white;
     align-items: flex-end;
     align-content: flex-end;
@@ -159,6 +164,11 @@ $boxBorder: 5px solid black;
 
 .equipo-trabajo {
     background-color:black;
+    main{
+        img{
+            width: 100%;
+        }
+    }
 }
 .equipo-trabajo header {
     @include header;
@@ -170,9 +180,6 @@ $boxBorder: 5px solid black;
 .equipo-trabajo .header__leyenda--container {
     padding: 30px;
   }
-.equipo-trabajo img {
-   width: 100%;
-}
 .equipo-trabajo h2 {
     text-align: center;
     width: 100%;
@@ -183,6 +190,7 @@ $boxBorder: 5px solid black;
     display: grid;
     grid-template-columns: 610px auto 610px;
     grid-template-rows: 410px 410px 410px;
+    padding: 25px;
     img {
         height: 400px;
         width: 600px;
@@ -234,8 +242,10 @@ $boxBorder: 5px solid black;
 }
 .contacto {
     background-color:black;
-    img{
-        width: 100%;
+    main{
+        img{
+            width: 100%;
+        }
     }
     h2 {
         text-align: center;
@@ -290,9 +300,11 @@ $boxBorder: 5px solid black;
 }
 .clase-gratis{
    background-color:black;
-   img {
-       width: 100%;
-   }
+   main{
+       img {
+           width: 100%;
+        }
+    }
    h2 {
        text-align: center;
    }

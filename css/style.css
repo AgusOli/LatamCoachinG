@@ -81,6 +81,7 @@
       grid-template-columns: 550px auto;
   -ms-grid-rows: 100px 500px;
       grid-template-rows: 100px 500px;
+  padding: 15px;
 }
 
 .index .grid-container .video-presentacion {
@@ -110,9 +111,12 @@
   border: black solid 5px;
   -ms-flex-line-pack: center;
       align-content: center;
+  border: solid 5px #212529;
 }
 
 .index .grid-container .latam-es {
+  display: flex;
+  align-items: center;
   -ms-grid-column: 2;
   grid-column: 2;
   -ms-grid-row: 2;
@@ -189,13 +193,10 @@
 .planes .flex-container {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 40% 40%;
-      grid-template-columns: 40% 40%;
-  -ms-grid-rows: 500px 500px;
-      grid-template-rows: 500px 500px;
-  gap: 30px;
-  -webkit-column-gap: 20%;
-          column-gap: 20%;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  justify-items: center;
+  grid-row-gap: 30px;
 }
 
 .planes .flex-container .flex-item img {
@@ -205,8 +206,7 @@
 .planes .flex-item {
   background: black;
   border: 5px solid #212529;
-  width: 90%;
-  height: 105%;
+  width: 70%;
   color: white;
   -webkit-box-align: end;
       -ms-flex-align: end;
@@ -299,6 +299,7 @@
       grid-template-columns: 610px auto 610px;
   -ms-grid-rows: 410px 410px 410px;
       grid-template-rows: 410px 410px 410px;
+  padding: 25px;
 }
 
 .equipo-trabajo .principal img {
