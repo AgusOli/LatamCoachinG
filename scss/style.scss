@@ -8,6 +8,26 @@ $boxBorder: 5px solid black;
     justify-content: space-between;
     background: black; 
 }
+@mixin header__img {
+    width: 200px;
+    height: 200px;
+    margin: 5px;
+}
+@mixin footer {
+    width: 100%;
+    padding: 4px;
+    font-size: 1.8rem;
+    font-weight: bold;
+    background: #212529;
+    text-align: center;
+}
+@mixin footerlist {
+    padding-top: 10px;
+    list-style: none;
+    display: inline;
+    font-weight: 900;
+    margin: 10%;
+}
 .index {
     background-color:black;
     main {
@@ -20,10 +40,8 @@ $boxBorder: 5px solid black;
 @include header;
   }
   
-.index.header__img {
-    width: 200px;
-    height: 200px;
-    margin: 5px;
+.index .header__img {
+   @include header__img;
   }
 .index  .header__leyenda--container {
     padding: 30px;
@@ -33,7 +51,8 @@ $boxBorder: 5px solid black;
   }
   .navbar-dark .navbar-nav .nav-link {
       font-size: 1.2rem;
-      margin: 0px 15px;  }
+      margin: 0px 15px;
+     color:#c28f2c ;  }
   .navbar-dark .navbar-nav .nav-link.active {
     color:#a2491e ;
     font-size: 1.2rem;
@@ -49,11 +68,11 @@ $boxBorder: 5px solid black;
     width: 100%;
     height: 100vh;
 }
-    
-
 .index .quienes-somos {
     text-align: center;
-    font-weight:800 ;
+    width: 100%;
+    background: #212529;
+    padding: 10px;
 }
 .index .grid-container {
     display: grid;
@@ -88,21 +107,12 @@ $boxBorder: 5px solid black;
     font-size: 25px;
     margin-left: 20px;
 }
-.index.footer {
-    width: 100%;
-    padding: 4px;
-    font-size: 1.8rem;
-    font-weight: bold;
-    background: #212529;
-    text-align: center;
+.index .footer {
+ @include footer;
 }
     
-.index.footer ul li {
-    padding-top: 10px;
-    list-style: none;
-    display: inline;
-    font-weight: 900;
-    margin: 10%;
+.index .footer ul li {
+ @include footerlist;
 }
  
 .planes {
@@ -118,7 +128,7 @@ $boxBorder: 5px solid black;
   }
   
   .planes .header__img {
-    @extend .index.header__img;
+    @include header__img;
   }
   .planes  .header__leyenda--container {
     padding: 30px;
@@ -151,12 +161,12 @@ $boxBorder: 5px solid black;
     
 
  .planes .footer {
-    @extend .index.footer;
+    @include footer;
 }
     
   
 .planes .footer ul li {
-    @extend .index.footer.ul.li ;
+    @include footerlist;
 }
 #pie-pagina {
     margin: 0;
@@ -175,7 +185,7 @@ $boxBorder: 5px solid black;
   }
   
 .equipo-trabajo .header__img {
-    @extend .index.header__img;
+    @include header__img;
   }
 .equipo-trabajo .header__leyenda--container {
     padding: 30px;
@@ -233,12 +243,12 @@ $boxBorder: 5px solid black;
 
 
 .equipo-trabajo .footer {
- @extend .index.footer;
+    @include footer;
 }
    
  
 .equipo-trabajo .footer ul li {
-    @extend .index.footer.ul.li ;
+    @include footerlist;
 }
 .contacto {
     background-color:black;
@@ -256,24 +266,15 @@ $boxBorder: 5px solid black;
         text-align: center;
     }
     .form {
-             .datos-usuario{
-            border: $boxBorder;
-            background-color:#212529;
-            legend {
-                text-align: center;
-            }
-            .consulta {
-                text-align: center;
+             .consulta {
                 font-size: 1.2rem;
             }
-
-            div{
-                h3 {
-                    text-align: center;
-                }
+            .legend legend {
+                background-color: #212529;
+                text-align: center;
             }
-        } 
-    .checkbox{
+
+       .checkbox{
         text-align: center;
     }
   }
@@ -283,7 +284,7 @@ $boxBorder: 5px solid black;
   }
   
 .contacto .header__img {
-    @extend .index.header__img;
+    @include header__img;
   }
 .contacto .header__leyenda--container {
     padding: 30px;
@@ -293,10 +294,10 @@ $boxBorder: 5px solid black;
 }  
 
 .contacto .footer {
-    @extend .index.footer;
+    @include footer;
 }
    .contacto .footer ul li {
-    @extend .index.footer.ul.li ;
+    @include footerlist;
 }
 .clase-gratis{
    background-color:black;
@@ -333,17 +334,17 @@ $boxBorder: 5px solid black;
   }
   
 .clase-gratis .header__img {
-    @extend .index.header__img;
+    @include header__img;
   }
 .clase-gratis .header__leyenda--container {
     padding: 30px;
   }
 
 .clase-gratis .footer {
-    @extend .index.footer;
+    @include footer;
 }
  .clase-gratis .footer ul li {
-    @extend .index.footer.ul.li ;
+    @include footerlist;
 }
 @media all and (max-width: 768px) {
     .index .grid-container {
@@ -365,6 +366,30 @@ $boxBorder: 5px solid black;
     .planes .flex-item {
         height: 80%;
     }
+    .equipo-trabajo .principal{
+        grid-template-columns: 1fr;
+        grid-template-rows: 410px 210px 410px 210px 410px 210px;
+        .img2 {
+            grid-column: 1;
+            grid-row: 3;
+        }
+        .img3 {
+            grid-column: 1;
+            grid-row: 5;
+        }
+        .p1 {
+            grid-column: 1;
+            grid-row: 2;
+        }
+        .p2 {
+            grid-column: 1;
+            grid-row: 4;
+        }
+        .p3 {
+            grid-column: 1;
+            grid-row: 6;
+        }
+    }
 
 }
 @media all and (max-width: 576px){
@@ -385,6 +410,17 @@ $boxBorder: 5px solid black;
      .planes .flex-container .flex-item {
          height: 420px;
      }   
-
-
+     .equipo-trabajo .principal{
+       img {
+           width: 95%;
+       }
+    }
+    .planes .flex-container {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-row-gap: 45px;
+        .flex-item {
+            height: 500px;
+        }
+    }
 }

@@ -56,64 +56,60 @@
       <img class="animate__animated animate__backInUp" src="./Img/Jarvan.jpg" alt="Jarvan">
     </main>
     <h2 class="titulo-contacto">Contacto</h2>
-<p>Al completar la información del formulario a continuación nos pondremos en contacto en menos de 48 horas con el usuario para brindar la informacion solicitada o continuar con la eleccion y pago del plan de aprendizaje.</p>
-
-<form action="enviar.php" method="get" enctype="text/plain">
-
-    <br>
+    <p>Al completar la información del formulario a continuación nos pondremos en contacto en menos de 48 horas con el usuario para brindar la informacion solicitada o continuar con la eleccion y pago del plan de aprendizaje.</p>
+    
+    <form action="enviar.php" method="get" enctype="text/plain">
+      <form>
     <div class="form">
-        
-        <fieldset class="datos-usuario">
-            <legend>Datos del usuario</legend>
-            
-            <div>
-                <label for="Nommbre y Apellido">Nombre y Apellido</label>
-                <input type="text" id="Nombre y Apellido" placeholder="Ingrese Nombre y Apellido" required>
-            </div>
-            <br>
-            <div>
-                <label for="Email">Email de contacto</label>
-                <input type="text" id="Email" placeholder="Ingrese su Email" required>
-            </div>
-            <br>
-            <div>
-                <label for="Nombre de Invocador">Nombre de Invocador (Nombre en el juego)</label>
-                <input type="text" id="Nombre de Invocador" placeholder="Ingrese su Nombre de Invocador" required> 
-            </div>
-            <br>
-            <div>
-              <label for="Link de la cuenta"> Link de la cuenta de Lol</label>
-                <input type="link" id="Link de la cuenta" placeholder="Busca el link de tu cuenta y pegalo aca" required>
-                <h3><a href="https://las.op.gg/">¿No sabés dónde buscar tu cuenta? Haz Click Acá</a></h3>
-           </div>
-         <div>
-            <select name="Region" id="Region" required>
-                <option value="0">Seleccione la región</option>
-                <option value="1">LAS</option>
-                <option value="2">LAN</option>
-                <option value="3">BR</option>
-                
-            </select>
-        </div>
-            </fieldset>
-    <br>
-    <fieldset class="datos-usuario">
-        
-        <legend>Consulta o solicitud de suscripción</legend>
-        <br>
-        <div class="consulta">
-            <label for="multi">Hacé tu consulta</label>   
-            <textarea name="multi" id="multi" cols="100" rows="10"></textarea>
-        </div>
-        <br>
-        
-        <select name="Planes" id="Planes" required>
-            <option value="0">Seleccione el plan que le interesa</option>
-            <option value="1">Análisis de partidas</option>
-            <option value="2">Clases sobre conceptos basicos</option>
-            <option value="3">Clases de toma de decisiones</option>
-            <option value="4">Preparación de clases sobre tema específico (aclarar en consulta)</option>
+    <div class="legend">
+      <legend>Datos del usuario</legend>
+    </div>
+    <div class="form-row">
+      <div class="form-group col-md-6">
+        <label for="inputEmail4">Nombre y Apellido</label>
+        <input type="email" class="form-control" id="inputEmail4" placeholder="Ingrese Nombre y Apellido">
+      </div>
+      <div class="form-group col-md-6">
+        <label for="inputPassword4">Email de contacto</label>
+        <input type="password" class="form-control" id="inputPassword4" placeholder="Ingrese su Email">
+      </div>
+    </div>
+    <div class="form-group col-md-6">
+      <label for="inputPassword4">Nombre de Invocador (Nombre en el juego)</label>
+      <input type="password" class="form-control" id="inputPassword4" placeholder="Ingrese su Nombre de Invocador">
+    </div>
+    <div class="form-group">
+      <label for="inputAddress2">Link del Perfil de la cuenta de Lol</label>
+      <input type="text" class="form-control" id="inputAddress2" placeholder="Busca el link de tu cuenta y pegalo aca">
+      <h4><a target="blank" href="https://las.op.gg/">¿No sabés dónde buscar tu cuenta? Haz Click Acá</a></h4>
+    </div>
+      <div class="form-group col-md-4">
+        <label for="inputState">Region</label>
+        <select id="inputState" class="form-control">
+          <option value="0">Seleccione la región</option>
+          <option value="1">LAS</option>
+          <option value="2">LAN</option>
+          <option value="3">BR</option>
         </select>
+      </div>
+
+  </form>
+  <br>
+    <fieldset class="datos-usuario">
+       <div class="legend">
+         <legend>Consulta o solicitud de suscripción</legend>
+       </div> 
+      <select name="Planes" id="Planes" required>
+          <option value="0">Seleccione el plan que le interesa</option>
+          <option value="1">Análisis de partidas</option>
+          <option value="2">Clases sobre conceptos basicos</option>
+          <option value="3">Clases de toma de decisiones</option>
+          <option value="4">Preparación de clases sobre tema específico (aclarar en consulta)</option>
+      </select>
+        <div class="form-group">
+          <label for="inputAddress2">Hacé tu consulta</label>
+          <input type="text" class="form-control" id="inputAddress2" placeholder="Escribe la consulta específica">
+        </div>
     </fieldset>
     <br>
     <p>Recordá que una vez enviado el formulario, un integrante del equipo se comunicará contigo al email proporcionado para poder brindarle asi un presupuesta mas especifico y tambien aclarar la consulta que se haya hecho, por ende al enviar el formulario acepta que el equipo le envie notificaciones al email.</p>
@@ -132,11 +128,12 @@
 <br>
 <br>
 <footer class="footer">
-    <ul  id="pie-pagina">
-        <li><i class="bi bi-youtube"></i></li>
-        <li><i class="bi bi-twitch"></i></li>
-        <li><i class="bi bi-instagram"></i></li>
-        <li><i class="bi bi-twitter"></i></li>
-    </ul>
-    </footer>
-
+  <ul  id="pie-pagina">
+      <li><a href="https://www.youtube.com/" target="blank"><i class="bi bi-youtube"></i></a></li>
+      <li><a href="https://www.twitch.tv/" target="blank"><i class="bi bi-twitch"></i></a></li>
+      <li><a href="https://www.instagram.com/" target="blank"><i class="bi bi-instagram"></i></a></li>
+      <li><a href="https://twitter.com/" target="blank"><i class="bi bi-twitter"></i></a></li>
+  </ul>
+  </footer>
+</body>
+</html>
