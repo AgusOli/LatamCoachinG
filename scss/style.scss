@@ -77,7 +77,6 @@ $boxBorder: 5px solid black;
 .index .grid-container {
     display: grid;
     grid-template-columns: 550px auto;
-    grid-template-rows: 100px 500px;
     padding: 15px;
 }
 
@@ -266,12 +265,19 @@ $boxBorder: 5px solid black;
         text-align: center;
     }
     .form {
+        padding-left: 75px;
+        padding-right: 75px;
+        h4 {
+            text-align: center;
+        }
              .consulta {
                 font-size: 1.2rem;
             }
-            .legend legend {
-                background-color: #212529;
-                text-align: center;
+            .legend {
+                legend{
+                    text-align: center;
+                    background-color: #212529;
+                }
             }
 
        .checkbox{
